@@ -1,0 +1,18 @@
+server:
+  port: 28081
+eureka:
+  instance:
+    prefer-ip-adress: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+
+feign:
+  hystrix:
+    enabled: true
+spring:
+  application:
+    name: web
+ribbon:
+  ReadTimeout: 6000 #6秒钟
+  ConnectTimeout: 6000

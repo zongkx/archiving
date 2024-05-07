@@ -1,0 +1,43 @@
+#server:
+#  port: 18081
+eureka:
+  instance:
+    prefer-ip-adress: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+#
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/shop-goods?serverTimezone=GMT%2B8
+#    username: root
+#    password: 123456
+#  application:
+#    name: goods
+#
+#feign:
+#  hystrix:
+#    enabled: true
+#
+#
+
+# SpringCloudConfig 客户端:需要删除application.yml,新建bootstrap.yml,并配置如下,这样就能找到对应的 配置文件
+spring:
+  cloud:
+    config:
+#      uri: http://127.0.0.1:6001
+      name: goods #前缀
+      profile: dev #后缀
+      label: master #分支
+      discovery:
+        enabled: true
+        service-id: config
+  rabbitmq: #RabbitMQ的配置
+    virtual-host: /
+    username: username
+    password: password
+    port: 5672
+    addresses: 39.97.243.43
+

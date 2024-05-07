@@ -1,0 +1,22 @@
+server:
+  port: 18083
+eureka:
+  instance:
+    prefer-ip-adress: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dictionary?serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+  application:
+    name: sys
+
+feign:
+  hystrix:
+    enabled: true
+
+
