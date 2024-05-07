@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>test</display-name>
+  <servlet>
+    <servlet-name>demo</servlet-name>
+    <servlet-class>servlet.demo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteCourse</servlet-name>
+    <servlet-class>servlet.deleteCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>changeCourse</servlet-name>
+    <servlet-class>servlet.changeCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addCourse</servlet-name>
+    <servlet-class>servlet.addCourse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>demo</servlet-name>
+    <url-pattern>/listUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteCourse</servlet-name>
+    <url-pattern>/deleteCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>changeCourse</servlet-name>
+    <url-pattern>/changeCourse</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>addCourse</servlet-name>
+    <url-pattern>/addCourse</url-pattern>
+  </servlet-mapping>
+</web-app>

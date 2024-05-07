@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #a{
+            width: 80px;
+            height: 35px;
+            border: solid black 1px;
+            text-align: center;
+            display: inline-block;
+            line-height: 35px;
+            background: lightskyblue;
+            color: black;
+
+
+
+        }
+        #b{
+            width: 30px;
+            height: 35px;
+            border: solid black 1px;
+            text-align: center;
+            display: inline-block;
+            line-height: 35px;
+            background: lightskyblue;
+            color: black;
+        }
+        #c{
+            width: 30px;
+            height: 35px;
+            border: solid black 1px;
+            text-align: center;
+            display: inline-block;
+            line-height: 35px;
+            background: lightskyblue;
+        }
+        #d{
+            width: 200px;
+            height: 35px;
+            border: solid black 1px;
+            text-align: center;
+            display: inline-block;
+            line-height: 35px;
+            background: lightskyblue;
+        }
+        #e{
+            width: 80px;
+            height: 35px;
+            border: solid black 1px;
+            text-align: center;
+            display: inline-block;
+            line-height: 35px;
+            background: lightskyblue;
+        }
+    </style>
+    <script >
+        <!--让窗口把body里面的代码运行完-->
+        window.onload=function () {
+
+            var aa = document.getElementById('a');
+            aa.onmousemove= function () {
+                aa.style.border = "solid grey 2px";
+                aa.style.background = "yellow";
+                 };
+            var aaa = document.getElementById('a');
+            aaa.onmouseout= function () {
+                aaa.style.border = "solid black 1px";
+                aaa.style.background = "lightskyblue";
+            };
+
+            var bb = document.getElementById('b');
+            bb.onmousemove = function () {
+                bb.style.border = "solid grey 2px";
+                bb.style.background = "yellow";
+            };
+            var bbb = document.getElementById('b');
+            bbb.onmouseout = function () {
+                bbb.style.border = "solid black 1px";
+                bbb.style.background = "lightskyblue";
+            };
+
+            var cc = document.getElementById('c');
+            cc.onmousemove = function () {
+                cc.style.border = "solid grey 2px";
+                cc.style.background = "white";
+            };
+            var dd = document.getElementById('d');
+            dd.onmousemove = function () {
+                dd.style.border = "solid grey 2px";
+                dd.style.background = "white";
+            };
+            var ee = document.getElementById('e');
+            ee.onmousemove= function () {
+                ee.style.border = "solid grey 2px";
+                ee.style.background = "white";
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+        <div ></div>
+        <a href="#"><span id="a">上一页</span></a>
+        <a href="#"><span id="b">1 </span></a>
+        <a href="#"  ><span id="c">2</span></a>
+        <a href="#"> <span id="d">..........</span></a>
+        <a href="#"><span id="e">下一页</span></a>
+
+
+
+
+</body>
+</html>

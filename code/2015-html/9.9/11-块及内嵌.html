@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #bm{
+            /*width:200px;*/
+            height: 200px;
+            background: red;
+            display: block;
+
+        }
+        #am{
+            width: 200px ;
+            height: 300px;
+            background: blue;
+            display: inline-block;
+            /*块 默认为display:   block
+             inline  为内嵌的属性
+             inline-block 拥有两者的属性*/
+        }
+        #bn{
+            width:200px;
+            height: 200px;
+            background: red;
+            display: inline-block;
+
+        }
+        #an{
+            width: 200px ;
+            height: 300px;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="bm">
+        james
+    </div>
+    <div id="am">
+        kobe
+    </div>
+    <!--  块
+     1.独占一行
+     2.支持所有样式
+     3.不设置宽的时候  整行显示
+     4.不设置高的时候  由内容撑开-->
+    <span id="an"> yao</span>
+    <span id="bn"> answer</span>
+    <!--内嵌
+      1.可以在一行下面显示
+      2.不支持宽高
+      3.宽由内容撑开
+      4.代码换行解析
+      -->
+    <!--display 的特征
+    1.block 块
+    2.inline 内嵌
+    3.inline-block  内嵌/块
+    inline-block 块级元素能在一行显示  内嵌元素支持宽高  没有宽高的时候 内容撑开
+    -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+/*-------------------background-----------------*/
+    *{
+    margin-top: 0;
+    }
+    body{
+
+        background-color:white;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
+        border-bottom:1px black solid ;
+        width: 780px ;
+        height: 1480px;
+    }
+    #bg{
+        border: 20px lightgrey solid;
+        width: 740px;
+        height: 1440px;
+
+    }
+/*----------------------header------------------*/
+    #header{
+    text-align: center;
+
+    }
+    #header span{
+    position: relative;
+    left: 126px;
+    top: 44px;
+    font-size: 14px;
+
+    }
+    #header a{
+    text-decoration: none;
+    color: black;
+    }
+/*-----------------------content-----------------*/
+    #content  table{
+                position: absolute;
+                top:103px;
+        }
+              table .l1{
+                  background-image: url("i/littlemeun.jpg");
+                  width: 188px;
+                  height: 26px;
+                  color: white;
+                  text-align: left;
+                  text-indent: 16px;
+                  font-size: 12px;
+                        }
+              table  #l0{
+                        text-decoration: none;
+                        background-color: #ff9d06;
+                        color: black;
+                        font-size: 15px;
+                        border: 1px solid black;
+                        -webkit-box-shadow: 5px -5px 5px grey;
+                        width: 20px;
+                        height: 10px;
+                        }
+              table .l2{
+                        text-decoration: none;
+                        color: white;
+                        }
+              table  #m0{
+                        width:188px;
+                        height: 30px;
+                        background-color: gainsboro;
+                        padding-top: 26px;
+                        text-align:left;
+                        text-indent: 6px;
+                        }
+/*----------------------content1-----------------*/
+    #content1{
+        position:absolute;
+        top: 117px;
+        left:224px;
+    }
+    #content1 span{
+        position: absolute;
+        left: 22px;
+        top: 168px;
+        font-size: 14px;
+    }
+    #content1 select{
+        width: 80px;
+    }
+/* ---------------------next-------------------- */
+    #a1{
+        position: absolute;
+        left: 34px;
+        top: 316px;
+        background-color: grey ;
+        width:730px;
+        height: 4px;
+    }
+    #a2{
+        position: absolute;
+        left: 34px;
+        top: 324px;
+        background-color: indianred ;
+        width:187px;
+        height: 30px;
+        line-height: 30px;
+        text-indent: 10px;
+        font-size: 16px;
+        color: white;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+    }
+    #a3{
+        position: absolute;
+        left: 224px;
+        top: 324px;
+        background-color: #cd6a08;
+        width:540px;
+        height: 30px;
+        line-height: 30px;
+        text-indent: 10px;
+        font-size: 14px;
+        color: white;
+        -webkit-border-radius: 4px;
+    }
+    #a3 a,#a8 a{
+        text-decoration: none;
+        color: white;
+    }
+    #a3a,#a8a{
+        position: relative;
+        left: 395px;
+    }
+    #a4 table{
+        position: absolute;
+        left: 34px;
+        top: 360px;
+        background-color: rgb(205, 225, 230);
+        width: 186px;
+        height: 26px;
+        text-align: left;
+        line-height: 26px;
+        border-color: rgb(205, 225, 230);
+
+    }
+    #a4 .q1{
+        background-color: rgb(205, 225, 230);
+
+    }
+    #a4 .q2{
+                    background-color: rgb(205, 225, 230);
+                    font-size:14px ;
+                    text-indent:10px ;
+
+                    }
+    #a4 .q3{
+                    background-color: rgb(226, 246, 251);
+                    font-size: 12px;
+                    text-indent: 28px;
+                    line-height: 24px;
+                }
+    #a4 a{
+        text-decoration: none;
+        color: black;
+    }
+    #a5,#a6,#a7{
+        border:1px rgba(27, 2, 3, 0.41) solid;
+        border-right:none ;
+        width:177px;
+        height:137px ;
+        font-size: 14px;
+        padding-left: 4px;
+    }
+    #a5{
+        position: absolute;
+        left:224px;
+        top: 360px;
+    }
+    #a6{
+        position: absolute;
+        left:403px;
+        top: 360px;
+    }
+    #a7{
+        position: absolute;
+        left:580px;
+        top: 360px;
+    }
+    #a5 img , #a6 img, #a7 img{
+        position: absolute;
+        left:95px;
+        top: 24px;
+
+    }
+    #a5 .p1,  #a6 .p1, #a7 .p1{
+        background-color: #ffcc00;
+    }
+    #a8{
+        position: absolute;
+        left: 224px;
+        top: 504px;
+        background-color: #cd980c;
+        width:540px;
+        height: 30px;
+        line-height: 30px;
+        text-indent: 10px;
+        font-size: 14px;
+        color: white;
+        -webkit-border-radius: 4px;
+    }
+    #a9{
+        position: absolute;
+        left: 224px;
+        top: 540px;
+
+    }
+    #a9 .z1{
+        text-align: center;
+        }
+        .z2{
+            text-decoration: line-through;
+        }
+        .z3{
+            color: red;
+        }
+/*--------------------foot-------------------*/
+    #b1{
+        position: absolute;
+        left:32px;
+        top: 1400px;
+        background-color: #5c5c5c;
+        width: 186px;
+        height: 60px;
+        text-align: center;
+        line-height: 20px;
+    }
+    #b2{
+        position: absolute;
+        top:1400px;
+        left:218px;
+        background: #e1e1e1;
+        width:551px;
+        height:60px ;
+    }
+    #b2 a{
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        margin-left: 10px;
+        color: black;
+    }
+/*-----------------附加------------------*/
+    #return{
+        position: fixed;
+        left: 747px;
+        bottom: 7px;
+    }
+    #return:active {
+        opacity: 0.3;
+    }
+    .img0:hover{
+        transform: scale(1.2,1.2);
+        transition: 0.3s ;
+    }
+
+
+
+

@@ -1,0 +1,55 @@
+# Project: 项目1
+# Makefile created by Dev-C++ 5.7.1
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = create.o discount.o display.o sub.o main.o serch.o read.o sort.o change.o remove.o
+LINKOBJ  = create.o discount.o display.o sub.o main.o serch.o read.o sort.o change.o remove.o
+LIBS     = -L"D:/DevCpp/MinGW64/lib" -L"D:/DevCpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"D:/DevCpp/MinGW64/include" -I"D:/DevCpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"D:/DevCpp/MinGW64/include" -I"D:/DevCpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/DevCpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = 客户消费积分管理.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+create.o: create.cpp
+	$(CPP) -c create.cpp -o create.o $(CXXFLAGS)
+
+discount.o: discount.cpp
+	$(CPP) -c discount.cpp -o discount.o $(CXXFLAGS)
+
+display.o: display.cpp
+	$(CPP) -c display.cpp -o display.o $(CXXFLAGS)
+
+sub.o: sub.cpp
+	$(CPP) -c sub.cpp -o sub.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+serch.o: serch.cpp
+	$(CPP) -c serch.cpp -o serch.o $(CXXFLAGS)
+
+read.o: read.cpp
+	$(CPP) -c read.cpp -o read.o $(CXXFLAGS)
+
+sort.o: sort.cpp
+	$(CPP) -c sort.cpp -o sort.o $(CXXFLAGS)
+
+change.o: change.cpp
+	$(CPP) -c change.cpp -o change.o $(CXXFLAGS)
+
+remove.o: remove.cpp
+	$(CPP) -c remove.cpp -o remove.o $(CXXFLAGS)

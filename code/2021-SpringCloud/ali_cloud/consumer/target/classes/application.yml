@@ -1,0 +1,33 @@
+# Spring
+spring:
+  application:
+    # 应用名称
+    name: consumer
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 127.0.0.1:8848
+  rabbitmq:
+    virtual-host: /
+    username: username
+    password: password
+    port: 5672
+    addresses: 39.97.243.43
+    # 消费方消息确认：手动确认
+    listener:
+      direct:
+        acknowledge-mode: manual
+# 需要阿里安全策略中添加5672的安全访问权限
+server:
+  port: 8082
+feign:
+  httpclient:
+    enabled: true # 开启httpclient
+  hystrix:
+    enabled: true # 开启hystrix
+
+
+logging:
+  file:
+    name: logs/${spring.application.name}/info.log

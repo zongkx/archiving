@@ -1,0 +1,58 @@
+server:
+  port: 8001
+eureka:
+  instance:
+    prefer-ip-adress: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+spring:
+  application:
+    name: gateway-web
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]': #匹配所有的请求
+            allowedOrigins: "*" # 跨域处理
+            allowedMethods: #
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        - id: shop-web-goods-route
+#          uri: http://localhost:18081 #指定要路由的服务 http://localhost:18081
+          uri: lb://GOODS #lb负载均衡,后面是微服务名称
+          predicates: #路由断言,配置路由规则
+            #- Host=zong.com** #所有的zong.com的请求都被路由到上面的uri,这里测试可以先修改windows的host文件如下,127.0.0.1 zong.com,
+            # 访问http://zong.com:8001/brand/all,可看到正确路由
+          - Path=/api/goods/** #所有以/brand开头的请求,都路由到http://localhost:18081微服务
+          filters:
+          - StripPrefix=1 # 所有以/api/brand开头的请求,都路由到  http://localhost:18081微服务,且/api由gateway自动去除
+#          - name: RequestRateLimiter
+#            args:
+#              key-resolver: "#{@ipKeyResolver}"
+#              redis-rate-limiter.replenishRate: 1
+#              redis-rate-limiter.burstCapacity: 1
+        - id: shop-web-user-route
+          uri: lb://USER #lb负载均衡,后面是微服务名称
+          predicates: #路由断言,配置路由规则
+          - Path=/api/user/**
+          filters:
+          - StripPrefix=1 # 所有以/api/brand开头的请求,都路由到  http://localhost:18081微服务,且/api由gateway自动去除
+#          - name: RequestRateLimiter #请求限流数,名字不能乱写,使用默认的factory
+#            args:
+#              key-resolver: "#{@ipKeyResolver}"
+#              redis-rate-limiter.replenishRate: 1
+#              redis-rate-limiter.burstCapacity: 1
+        - id: shop-web-sys-route
+          uri: lb://SYS #lb负载均衡,后面是微服务名称
+          predicates: #路由断言,配置路由规则
+          - Path=/dic/**
+management:
+  endpoint:
+    gateway:
+      enabled: true
+
+

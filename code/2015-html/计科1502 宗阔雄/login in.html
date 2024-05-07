@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ancl</title>
+    <link rel="stylesheet" href="11.css">
+    <script type="text/javascript">
+        function displaySubMenu(li) {
+            var subMenu = li.getElementsByTagName("ul")[0];//得到DOM树中li下面的的第一个ul标签
+            subMenu.style.display = "block";//把它属性封盖
+        }
+        function hideSubMenu(li) {
+            var subMenu = li.getElementsByTagName("ul")[0];//得到DOM树中li下面的的第一个ul标签
+            subMenu.style.display = "none";//把它属性隐藏
+        }
+    </script>
+</head>
+<body>
+    <div class="m">
+        <div class="a0">
+            <a href="凡客网页.html">
+                <!--移动标签   behavior 滚动方式  scrollamount 速度  scrolldelay  滚动延迟  loop  次数 默认-1无限循环-->
+                <marquee direction="left" behavior="slide" scrollamount="60px" scrolldelay="1000" loop="1" width="184px" >
+                    <img src="j/1.jpg">
+                </marquee>
+            </a>
+            <div class="b0">
+                <a class="b1" href="https://www.4399.com">帮助</a>
+            </div>
+        </div>
+        <div class="a1">
+            <div class="b2">
+                <img src="j/2.png">
+                <div class="b3">
+                    <div class="b4"> </div>
+                    <div id="c1">
+                        <div class="c2">Username</div>
+                        <div class="c3"><input type="text"> </div>
+                        <div class="c2">Password</div>
+                        <div class="c3"><input type="password"> </div>
+                        <div class="c4"><a href="凡客网页.html">Log In </a></div>
+                        <div class="c5">
+                            <img width="70%" height="70%" src="j/3.png">
+                        </div>
+                        <div class="c6"><a href="https://www.4399.com">More</a></div>
+                        <div class="c7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a2">
+            Copyright 2007 - 2016 vancl.com All Rights Reserved 京ICP证100557号
+            京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号
+        </div>
+        <div class="a3">
+            <table cellspacing="10px">
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.4399.com"><img src="j/5.png" ></a></td>
+                        <td><a href="https://www.4399.com"><img src="j/6.png" ></a></td>
+                        <td><a href="https://www.4399.com"><img src="j/7.png" ></a></td>
+                        <td><a href="https://www.4399.com"><img src="j/8.png" ></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+
+    <div class="n">
+        <ul id="navigation">
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <!--当鼠标移出去的时候  hidesubmenu  隐藏  当鼠标在区域内  displaymenu 出现-->
+                <a href="#">关于我们</a>
+                <ul>
+                    <li><a href="#">加盟信息</a></li>
+                    <li><a href="#">企业文化</a></li>
+                </ul>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#">企业频道</a>
+                <ul>
+                    <li><a href="#">直接采购</a></li>
+                    <li><a href="#">联系信息</a></li>
+                    <li><a href="#">相关政策</a></li>
+
+                </ul>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+                <a href="#"> 注册信息</a>
+                <ul>
+                    <li><a href="#">手机注册</a></li>
+                    <li><a href="#">邮箱注册</a></li>
+
+
+
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

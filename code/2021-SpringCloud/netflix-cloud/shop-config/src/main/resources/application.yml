@@ -1,0 +1,33 @@
+server:
+  port: 6001
+eureka:
+  instance:
+    prefer-ip-adress: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/raynorzong/spring-cloud-config.git
+          username: 1101732819@qq.com
+          password: mist1874
+          search-paths: /blob/master
+  rabbitmq: #RabbitMQ的配置
+    virtual-host: /
+    username: username
+    password: password
+    port: 5672
+    addresses: 39.97.243.43
+
+
+management: #暴露触发消息总线的地址
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

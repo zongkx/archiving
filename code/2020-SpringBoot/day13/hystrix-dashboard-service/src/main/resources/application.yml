@@ -1,0 +1,13 @@
+server:
+  port: 8013
+
+spring:
+  application:
+    name: hystrix-dashboard-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://root:123456@localhost:8005/eureka

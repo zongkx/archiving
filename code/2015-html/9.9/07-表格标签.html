@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #table{
+            border-collapse:collapse ;
+            /*合并边框线*/
+        }
+    </style>
+</head>
+<body>
+    <table id="table" border="2">
+        <!--<table> 是表格标签   <thead> 是表头   <tbody>  是表身  <tfoot>  是表尾-->
+        <thead>
+        <!--<tr> 代表表头的行内容
+            <th> 代表表头的单元格内容-->
+        <tr>
+            <th colspan="2">星期1/2</th>
+            <!--合并行单元格-->
+            <!--<th>星期2</th>-->
+            <th>星期3</th>
+            <!--<th>星期4</th>-->
+
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">h5</td>
+                <!--合并列单元格-->
+                <td>lol</td>
+                <td>LOL</td>
+            </tr>
+            <tr>
+                <!--<td>h5</td>-->
+                <td>lol</td>
+                <td>LOL</td>
+            </tr>
+        </tbody>
+        <tfoot>
+           <tr>
+
+           </tr>
+        </tfoot>
+
+
+    </table>
+
+
+
+
+</body>
+</html>

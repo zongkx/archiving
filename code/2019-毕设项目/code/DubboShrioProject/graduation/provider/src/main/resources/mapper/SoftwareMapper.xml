@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.SoftwareMapper">
+
+
+	<select id="getSoftwareByScore"
+		resultType="com.demo.entity.Software">
+		select * from software order by score desc limit 3;
+	</select>
+
+
+	<select id="getSoftwarePageByType"
+		resultType="com.demo.entity.Software">
+		select * from software where type = #{type}  limit ${offset},${limit};
+	</select>
+
+</mapper>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<b>${test}</b>
+	<br>
+	<table>
+		<#list list! as l>
+		<tr>
+			<td>${l.id!}</td>
+			<td>${l.username}</td>
+			<td>${l.password}</td>
+		</tr>
+		</#list>
+
+
+	</table>
+	${pageContext.request.servletPath}
+</body>
+</html>

@@ -1,0 +1,3 @@
+com\dubbo\service\AdminService.class
+com\dubbo\service\UserService.class
+com\dubbo\model\User.class

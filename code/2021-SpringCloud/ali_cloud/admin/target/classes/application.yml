@@ -1,0 +1,18 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 9100
+spring:
+  application:
+    name: admin
+  security:
+    user:
+      name: root
+      password: 123456
+  boot:
+    admin:
+      ui:
+        title: 服务状态监控

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Bootstrap core CSS -->
+<script th:src="@{/webjars/jquery/3.3.1/jquery.min.js}"></script>
+<script>
+	$(function() {
+		$('#loginBtn').click(function() {
+			var nickname = $('#nickname').val().trim();
+			var pswd = $('#pswd').val().trim();
+			$.ajax({
+				type : "POST",
+				url : "/login",
+				contentType : "application/json",//@RequestBody 需要这个来确定
+				data : JSON.stringify({
+					"nickname" : nickname,
+					"pswd" : pswd
+				}),
+				dataType : "json",
+				success : function(data) {
+
+					if (data.code === 1) {
+						console.log("YES");
+						window.location.href = '/index';
+					}
+					if (data.code === -1) {
+						console.log("NO");
+						$("#error_msg").html("账户错误");
+					}
+				},
+				error : function(data) {
+					alert(data.msg);
+				}
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<hr>
+	<p id="error_msg"></p>
+	<div>
+		<!-- <form th:src="@{path/login(path=${contextPath})}" action=""
+			method="post"> -->
+		<input type="text" name="nickname" id="nickname"/> 
+		<input	type="password" name="pswd" id="pswd" value="123456"/>
+		<!-- 	<input
+			type="submit" value="登录" /> -->
+		<!-- </form> -->
+		<button id="loginBtn">AjaxLogin</button>
+
+		<a href="/index">游客访问</a>
+	</div>
+</body>
+</html>

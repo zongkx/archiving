@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<!-- Bootstrap core CSS -->
+<link href="/s"
+	th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
+	rel="stylesheet">
+<script th:src="@{/webjars/jquery/3.3.1/jquery.min.js}"></script>
+<script>
+	$(function() {
+
+	});
+</script>
+</head>
+<body>
+
+	<!-- <div th:if="${user.nickname ne 'guest'}">
+		 <span th:text="${user.nickname}"></span>
+		 <a  href="/logout">logout</a>
+	</div>
+	<div th:else="${user.nickname eq 'guest'}">
+		 <span th:text="${user.nickname}"></span>
+	</div>
+	 -->
+
+
+
+	<!--  <div th:switch="${user.nickname}">
+	 	<div th:case="'guest'">guest</div>
+  		<div th:case="*"> 
+  		
+  			<p th:text="${nickname}"></p>
+			<a href="/logout">退出登录</a>
+  		</div>
+	 	
+			 
+	</div>  -->
+	<span shiro:authenticated="true"> <span>欢迎您： <span
+			th:text="${user.nickname}"></span>
+	</span> <a href="/logout">logout</a>
+	</span>
+	<hr>
+
+	<a href="login">login</a><hr>
+	<a href="user/test">RequirePermsTest</a><hr>
+	<a href="user/test1">RequirePermsTest1</a>
+
+
+	<div>
+		<!--  <ul>
+          <li  th:each="user:${users}">
+              <span th:text="${user.id}"></span>
+             <span th:text="${user.nickname}"></span>
+             <span th:text="${user.pswd}"></span> 
+           
+         </li> 
+     </ul> -->
+
+	</div>
+</body>
+</html>

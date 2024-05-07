@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>账号设置</title>
+		<link href="css/shezhi.css" rel="stylesheet" type="text/css">
+	<script>
+    function show(menu) {
+	    document.getElementById(menu).style.display = "block";
+    }
+    function hide(menu) {
+	    document.getElementById(menu).style.display = "none";
+    }
+    function show1(menu) {
+	    document.getElementById("i1").style.visibility="visible";
+	    document.getElementById("i2").style.visibility="hidden";
+	    
+    }
+    function show2(menu) {
+	    document.getElementById("i2").style.visibility="visible";
+	    document.getElementById("i1").style.visibility="hidden";
+    }
+</script>
+		
+	</head>
+	<body>
+		<div id="header">
+			<img style="margin-left: 183px;margin-top: 16px;" src="img/shezhi/logo.gif" />
+			<div id="header_right" >
+				<a href="#" style="text-decoration: none;" onmouseover="show('a1')" onmouseout="hide('a1')"><img style="width: 16px;height: 16px;vertical-align:bottom;" src="img/shezhi/touxiang.jpg" />
+				<span style="vertical-align: bottom;">好久9772<span id="mod"></span></a>
+				<span class="xain"> | </span><a href="#" class="li">私信</a><span class="xain"> | </span><a href="#" class="li">在线客服</a><span class="xain"> | </span><a href="#" class="li">百度首页</a>
+				</span>
+				<div id="a1" onmouseover="show('a1')" onmouseout="hide('a1')">
+					<div id="a2"><a href="">我的百度</a>
+					<a href="" style="border-top: 1px solid lightgray ;border-bottom: 1px solid lightgray;">账号设置</a>
+					<a href="">退出</a></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="banner">
+			<div id="title">
+				<a href="" style="background: rgb(0,103,255);">首页</a>
+				<a href="">密保工具</a>
+				<a href="">密码关联</a>
+				<a href="">身份认证</a>
+			</div>
+		</div>
+		
+		<div id="content">
+			<div id="center">
+				<div id="left">
+					<div id="top">
+					<a href="" id="tx" onmouseover="show('xiugai')" onmouseout="hide('xiugai')">
+						<img  src="img/shezhi/toux.png" />
+						<div id="xiugai">修改头像</div>
+					</a>
+					<div id="top_rht"><span style="font-size: 16px;">nigh9772</span><br>
+					<a href="" style="display:block; margin-top: 14px;">修改资料</a></div>
+					</div>
+					<div id="tip">
+						<b class="zi" style="vertical-align: top;">最近一次敏感操作：<a><img style="vertical-align: top;" src="img/shezhi/wenhao.png" /></a></b>
+						<p class="zi">您最近还没有进行过敏感操作哦~</p>
+					</div> 
+					<div id="left_title">快速通道</div>
+					<div id="liebiao">
+						<a href=""><img src="img/shezhi/l1.jpg"> 修改密码</a>
+						<a href=""><img src="img/shezhi/l2.jpg"> 手机: 150******33<font style="float: right;color: #2e82ff;margin-right: 10px;">修改</font></a>
+						<a href=""><img src="img/shezhi/l3.jpg"> 帐号申诉</a>
+						<a href=""><img src="img/shezhi/l4.jpg"> 在线客服</a>
+						<a href=""><img src="img/shezhi/l5.jpg"> 身份认证</a>
+					</div>
+				</div>	
+				
+				<div id="right">
+					<p class="right_title">安全评分</p>
+					<img style="vertical-align: bottom;" src="img/shezhi/Jingdu.png" /><font id="fenshu">70分！</font>
+					<a id="jiance">重新检测</a>
+					<p id="advice">您的帐号存在安全风险，建议立即优化以下<b style="color: #f4422a;">5</b>项：</p>
+					<div id="right_ul" >
+					<p class="right_ul"><img src="img/shezhi/tubiao.png">
+					<span>绑定密保邮箱，提供安全保障</span><a href="">立即绑定</a></p>
+					<p><img src="img/shezhi/tubiao.png">
+					<span>下载安全中心手机版，多种验证方式任你挑选</span><a href="">立即下载</a></p>
+					<p><img src="img/shezhi/tubiao.png">
+					<span>开启登录保护，帐号被盗也不用担心</span><a href="">立即开启</a></p>
+					<p><img src="img/shezhi/tubiao.png">
+					<span>开启短信提醒，安全信息随时知道</span><a href="">立即开启</a></p>
+					<p><img src="img/shezhi/tubiao.png">
+					<span>设置密保问题，多重信息保证帐号安全</span><a href="">立即开启</a></p>
+					</div>
+					<div id="zhankai" onclick="show('yes')"><a href="" style="color: #999;text-decoration: none;float: right;" >展开已完成项︾</a></div>
+					<br />
+					<!--<p id="yes" style="visibility: hidden;width:;height: 30px;">绑定密保手机，帐号安全一步到位</p>-->
+					<p class="right_title" style="border-top: 1px dashed #dfdfdf;">安全提醒设置</p>
+					<p style="font-size: 12px;color: #999;font-family: simsun;">当帐号发生异常情况时，系统自动发送的通知提醒</p>
+					<div id="right_center">
+						<div id="l">
+							<img src="img/shezhi/dengji.png">
+							<img id="i1" style="visibility: visible; margin-left: -49px;margin-bottom: -7px;" src="img/shezhi/jiantou.png" />
+							<img id="i2" style="visibility: hidden; margin-left: -31px;margin-bottom: 99px;" src="img/shezhi/jiantou.png" />
+						</div>
+						<div id="r">
+							<p id="p1" onclick="show2()"><a class="a" href=""><input type="radio" name="select"/>短信提醒：安全级别
+								<b style="font-size: 24px;font-weight: 400;color: #666;"> 高</b>
+								<span><font class="f1">方便快捷，时效性高，强烈建议开启！</font></span>
+							</a></p>
+							<p id="p2"><input  type="radio" name="select" disabled=""/><font style="color: #dcdcdc;">邮件提醒：安全级别</font>
+							<b style="font-size: 24px;font-weight: 400;color: #dcdcdc;"> 中</b>
+								<span ><font class="f1">开启提醒前请先<a href="" id="a5">绑定邮箱</a>喔~</font></span></p>
+							
+							<p id="p3" onclick="show1()"><a class="a" href=""><input  type="radio" name="select"/>私信提醒：安全级别
+								<b style="font-size: 24px;font-weight: 400;color: #666;"> 低</b></p>
+								
+							</a>
+						</div>
+					</div>
+					
+					<p class="right_title" style="margin-top: 24px; border-top: 1px dashed #dfdfdf;">登录历史</p>
+					<p style="font-size: 12px;color: #999;font-family: simsun;">以下为您最近15次登录记录，若存在异常情况，请在核实后尽快
+					<a id="ff" href="">修改密码</a></p>
+					<table id="table" >
+						<tr id="top1" style="background: rgb();"><th>时间</th><th>IP</th><th>浏览器</th><th>登录方式</th><th>设备</th></tr>
+						<tr class="t"><td>11月03日</td></tr>
+						<tr class="bor"><td>10:18</td><td>123.15.*.*</td><td>Chrome 55.0</td><td>手机号登录</td><td>百度网盘</td></tr>
+						<tr class="t"><td>11月02日</td></tr>
+						<tr class="bor"><td>18:55</td><td>125.47.*.*</td><td>Chrome 55.0</td><td>手机号登录</td><td>百度网盘</td></tr>
+						<tr class="t"><td>10月28日</td></tr>
+						<tr class="bor"><td>23:59</td><td>125.47.*.*</td><td>Chrome 55.0</td><td>手机号登录</td><td>手机 (S60)</td></tr>
+						<tr class="t"><td>10月27日</td></tr>
+						<tr class="bor"><td>14:08</td><td>125.47.*.*</td><td>Chrome 55.0</td><td>手机号登录</td><td>百度网盘</td></tr>
+						<tr class="bor"><td>10:10</td><td>125.47.*.*</td><td>Chrome 55.0</td><td>手机号登录</td><td>百度网盘</td></tr>
+						<tr id="bottom"><td colspan="5"><a href="" >查看所有&nbsp;</a></td></tr>
+					</table>
+										
+					
+					
+				</div>	
+			</div>
+		<div style="width:96px;height: 107px; position: absolute;top: 30px;right: 70px;background-image:url(img/shezhi/biankuang.png) ;">
+			<img style="position:absolute;top:10px;left: 13px;  width: 66px;height: 66px;" src="img/shezhi/erweima.png" >
+			
+		</div>
+
+		</div>
+		<div id="foot">2017 ©Baidu</div>
+		
+		
+		<div style="position: fixed;bottom: 5%;left: 10px;">
+			<a href=""><img src="img/shezhi/robot.gif"></a></div>
+			<a id="feedback">
+				<div id="feedback-inner">帮助中心</div>
+			</a>
+	</body>
+</html>

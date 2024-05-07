@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 配置SQL语句，与实体类操作的对应关系。 -->
+<!-- 保证唯一性 -->
+<!-- 使用接口方式 加载命名空间 使用代理模式 -->
+<mapper namespace="com.demo.mapper.UserMapper">
+
+
+<!-- 
+   将返回的数据  与对象对应。将返回的数据，按照配置组装成对应的对象。
+ -->
+ 
+ 
+ <!-- 查询数据表中的所有记录，并封装User对象集合 -->
+ <!-- as 后面的字段名要和model里面的值一致，如果没有as别名，那么应当确保数据库表中的字段名和JavaBean中的属性名一致 -->
+ 
+ 
+<select id="selectAll"  resultType="com.demo.model.User">
+ select t_id as id,t_username as username,t_password as password from t_user
+</select>
+
+
+
+
+<!-- 根据id查询数据表中的一条记录，并封装User对象 -->
+ <select id="selectById"  resultType="com.demo.model.User">
+ select t_id as id,t_username as username,t_password password from t_user where t_id=#{id};
+</select>
+
+
+<!-- 添加用户 -->
+ <insert id="insertUser">
+  insert into t_user (t_username,t_password)
+  values (#{username},#{password})
+</insert> 
+
+<!-- 更新用户 -->
+ <update id="updateUser">
+ update t_user set t_username=#{username},t_password=#{password}
+ where t_id=#{id}
+</update> 
+
+
+<!-- 删除用户 -->
+<delete id="deleteUser">
+  delete from t_user where t_id=#{id}
+</delete>
+
+
+
+</mapper>

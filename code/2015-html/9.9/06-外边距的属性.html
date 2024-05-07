@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: gray ;
+        }
+        #box{
+            background: cyan;
+
+        }
+        #boxx{
+            height: 200px ;
+            width: 200px ;
+            background: red;
+            margin: 100px ;
+
+
+        }
+        /*margin 传递 把自身的属性传递给父级*/
+        /*margin  重合  取大值  两个margin值重合了小值被覆盖了*/
+        #boxxx{
+            height: 300px ;
+            background: lightgrey;
+            margin:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="boxx">
+        </div>
+    </div>
+    <div id="boxxx">
+
+    </div>
+
+</body>
+</html>

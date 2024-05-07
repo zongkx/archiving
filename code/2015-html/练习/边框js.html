@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            /*border-left: 10px solid black;*/
+            /*border-right: 10px solid lightcoral;*/
+            /*border-top: 10px solid blueviolet;*/
+            /*border-bottom: 10px solid red;*/
+            border: 10px dashed orangered;
+            background: blueviolet ;
+            transition: 3s;
+        }
+    </style>
+    <script >
+        <!--让窗口把body里面的代码运行完-->
+        window.onload=function () {
+
+            var odiv =document.getElementById('div1');
+
+            odiv.onclick=function () {
+                odiv.style.border.top= '100px';
+                odiv.style.border='110px solid black';
+//               odiv.style.border.right='100px ';
+//               odiv.style.border.top= '200px ';
+//              odiv.style. border.bottom= '200px ';
+                odiv.style.width='200px';
+            odiv.style.height='200px';
+
+
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+
+
+</body>
+</html>

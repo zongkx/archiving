@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Bootstrap core CSS -->
+<script th:src="@{/webjars/jquery/3.3.1/jquery.min.js}"></script>
+
+<script th:src="@{/webjars/toastr/2.1.2/build/toastr.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+
+
+
+<link href="/s"
+	th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
+	rel="stylesheet">
+<link rel="stylesheet"
+	th:href="@{/webjars/toastr/2.1.2/build/toastr.min.css}" />
+<!-- <link rel="stylesheet" th:href="@{css/login.css}"/> -->
+<script th:src="@{js/login.js}"></script>
+</head>
+<body>
+	<hr>
+	<p id="error_msg"></p>
+	<div>
+		<input type="text" name="nickname" id="nickname" value="root" /> <input
+			type="password" name="pswd" id="pswd" value="123456" />
+		<button id="loginBtn">Login</button>
+		<button id="registDialogBtn">Regist</button>
+		<a href="/index">游客访问</a>
+	</div>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div id="regist-div" style="" class="form-group">
+				<input type="text" name="nickname" id="nickname1" value="test" /> <input
+					type="password" name="pswd" id="pswd1" value="123456" />
+				<button id="registBtn">注册</button>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.ShareMapper">
+
+
+	<select id="getShareByCommentAid"
+		resultType="com.demo.entity.Share">
+		select s.* from
+		 share s,comment c where s.id = c.aid and c.to_uid = #{nickname} order by c.time desc
+	</select>
+ 
+
+</mapper>

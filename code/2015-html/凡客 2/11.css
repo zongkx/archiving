@@ -1,0 +1,136 @@
+ /*------------------a0----------------*/
+ .a0{
+     margin-left: 400px;
+     border-bottom:1px #8e8e8e solid;
+     width: 1000px;
+     height: 70px;
+ }
+ .a0 img{
+     float: left;
+ }
+
+ .b0{
+     position: relative;
+     top:-32px;
+     text-indent: 59em;
+
+ }
+ .b0 a{
+     text-decoration: none;
+     color: #000000;
+     font-size: 13px;
+ }
+ .b1:hover,.c4 a:hover,.c6 a:hover{
+     color: red;
+ }
+ /*---------------------a1------------------*/
+ .a1{
+     border-bottom:1px solid #8e8e8e ;
+     margin-left: 400px;
+     height: 480px;
+     width: 1000px;
+
+
+ }
+
+ .b2{
+     width: 413px;
+     height:296px ;
+     margin-left: 32px;
+     margin-top: 160px;
+     /*background-image: url("j/2.png");*/
+
+ }
+ .b3 {
+     width: 413px;
+     height: 296px;
+     margin-left: 500px;
+     margin-top: -300px;
+
+ }
+.b4{
+     -webkit-filter: blur(4px);
+     -ms-filter: blur(4px);
+     filter: blur(19px);
+     background-image: url("j/4.png");
+    width: 413px;
+    height:296px ;
+
+
+ }
+
+ #c1{
+     width:206px;
+     height:250px ;
+     position: relative;
+     left:8px;
+     top: -300px;
+ }
+ .c2{
+     margin-left: 14px;
+     margin-top: 42px;
+ }
+ .c3 input{
+     margin-left: 20px;
+     margin-top: 16px;
+     width: 160px;
+     height: 20px;
+     font-size: 15px;
+     border-right: none;
+     border-left:none ;
+     border-top:none;
+     border-bottom: 1px solid #d3d3d3;
+ }
+ .c4 {
+     width:60px;
+     height: 20px;
+     margin-left: 30px;
+     margin-top:40px ;
+     text-align: center;
+     line-height: 20px;
+     border-bottom: 1px solid #d3d3d3;
+     border-right: 1px solid #d3d3d3;
+     background-color: white;
+
+
+ }
+ .c4 a,.c6 a{
+     text-decoration: none;
+     color: black;
+
+ }
+ .c5{
+     position: relative;
+     left:220px;
+     bottom: 190px;
+ }
+ .c5 img:hover{
+     transform: scale(1.2,1.2);
+     transition: 0.3s ;
+ }
+ .c6{
+     width:60px;
+     height: 20px;
+     position: relative;
+     left:116px;
+     bottom: 167px;
+     text-align: center;
+     line-height: 20px;
+     border-bottom: 1px solid #d3d3d3;
+     border-right: 1px solid #d3d3d3;
+     background-color: white;
+ }
+ /*-----------------a2--------------------*/
+ .a2{
+     font-size: 10px;
+     color: #8e8e8e;
+     margin-left: 500px;
+     margin-top: 20px;
+}
+ /*-----------------a3---------------------*/
+ .a3 table{
+     text-align: center;
+     margin-left: 650px;
+     margin-top: 20px;
+
+ }

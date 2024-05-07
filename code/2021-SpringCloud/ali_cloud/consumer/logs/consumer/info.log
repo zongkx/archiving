@@ -1,0 +1,73 @@
+2021-03-18 20:38:17.163  INFO 8324 --- [main] c.a.n.c.c.impl.LocalConfigInfoProcessor  : LOCAL_SNAPSHOT_PATH:C:\Users\Raynor\nacos\config
+2021-03-18 20:38:17.427  INFO 8324 --- [main] c.a.nacos.client.config.impl.Limiter     : limitTime:5.0
+2021-03-18 20:38:17.480  WARN 8324 --- [main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[consumer] & group[DEFAULT_GROUP]
+2021-03-18 20:38:17.485  WARN 8324 --- [main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[consumer.properties] & group[DEFAULT_GROUP]
+2021-03-18 20:38:17.486  INFO 8324 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-consumer.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-consumer,DEFAULT_GROUP'}]
+2021-03-18 20:38:17.565  INFO 8324 --- [main] com.TestRabbitMQ                         : No active profile set, falling back to default profiles: default
+2021-03-18 20:38:18.506  WARN 8324 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2021-03-18 20:38:18.514  WARN 8324 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2021-03-18 20:38:18.851  WARN 8324 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-03-18 20:38:19.071  INFO 8324 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5705677e-1353-3f18-8db4-b68997c97a37
+2021-03-18 20:38:21.185  WARN 8324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-18 20:38:21.186  INFO 8324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-18 20:38:21.201  WARN 8324 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-18 20:38:21.201  INFO 8324 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-18 20:38:21.549  INFO 8324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 20:38:22.656  INFO 8324 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2021-03-18 20:38:22.658  INFO 8324 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2021-03-18 20:38:22.660  INFO 8324 --- [main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2021-03-18 20:38:24.211  INFO 8324 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-18 20:38:24.515  INFO 8324 --- [main] com.alibaba.nacos.client.naming          : [LISTENER] adding DEFAULT_GROUP@@consumer with DEFAULT to listener map
+2021-03-18 20:38:24.518  INFO 8324 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [39.97.243.43:5672]
+2021-03-18 20:38:24.688  INFO 8324 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#2e590b:0/SimpleConnection@2055833f [delegate=amqp://username@39.97.243.43:5672/, localPort= 51514]
+2021-03-18 20:38:24.695  INFO 8324 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (topic.a) durable:false, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-03-18 20:38:24.780 ERROR 8324 --- [AMQP Connection 39.97.243.43:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'topic.a' in vhost '/': received 'false' but current is 'true', class-id=50, method-id=10)
+2021-03-18 20:38:25.788  INFO 8324 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (topic.a) durable:false, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-03-18 20:38:25.805 ERROR 8324 --- [AMQP Connection 39.97.243.43:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'topic.a' in vhost '/': received 'false' but current is 'true', class-id=50, method-id=10)
+2021-03-18 20:38:27.816  INFO 8324 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (topic.a) durable:false, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-03-18 20:38:27.840 ERROR 8324 --- [AMQP Connection 39.97.243.43:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'topic.a' in vhost '/': received 'false' but current is 'true', class-id=50, method-id=10)
+2021-03-18 20:38:31.850  INFO 8324 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (topic.a) durable:false, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-03-18 20:38:31.871 ERROR 8324 --- [AMQP Connection 39.97.243.43:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'topic.a' in vhost '/': received 'false' but current is 'true', class-id=50, method-id=10)
+2021-03-18 20:38:36.904  INFO 8324 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (topic.a) durable:false, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2021-03-18 20:38:36.928 ERROR 8324 --- [AMQP Connection 39.97.243.43:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'topic.a' in vhost '/': received 'false' but current is 'true', class-id=50, method-id=10)
+2021-03-18 20:38:36.945  INFO 8324 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.io.IOException
+2021-03-18 20:38:37.030  INFO 8324 --- [main] com.TestRabbitMQ                         : Started TestRabbitMQ in 21.526 seconds (JVM running for 23.912)
+2021-03-18 20:38:37.070  INFO 8324 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] consumer.properties+DEFAULT_GROUP
+2021-03-18 20:38:37.072  INFO 8324 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=consumer.properties, group=DEFAULT_GROUP, cnt=1
+2021-03-18 20:38:37.073  INFO 8324 --- [main] c.a.n.client.config.impl.ClientWorker    : [fixed-localhost_8848] [subscribe] consumer+DEFAULT_GROUP
+2021-03-18 20:38:37.073  INFO 8324 --- [main] c.a.nacos.client.config.impl.CacheData   : [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=consumer, group=DEFAULT_GROUP, cnt=1
+2021-03-18 20:38:37.388  INFO 8324 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2021-03-18 20:38:38.027  INFO 8324 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2021-03-18 20:38:38.029  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [LISTENER] removing DEFAULT_GROUP@@consumer with DEFAULT from listener map
+2021-03-18 20:38:38.072  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2021-03-18 20:38:38.075  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2021-03-18 20:38:38.076  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2021-03-18 20:38:41.083  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2021-03-18 20:38:41.083  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2021-03-18 20:38:44.089  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2021-03-18 20:38:47.098  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2021-03-18 20:38:47.099  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2021-03-18 20:38:47.100  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2021-03-18 20:38:47.101  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2021-03-18 20:38:47.102  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2021-03-18 20:38:47.105  WARN 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2021-03-18 20:38:47.107  WARN 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2021-03-18 20:38:47.107  INFO 8324 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2021-03-18 20:38:47.111  INFO 8324 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 20:38:47.119  INFO 8324 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2021-03-18 20:38:47.119 ERROR 8324 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [NA] error while receiving push data
+
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method) ~[na:1.8.0_202]
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124) ~[na:1.8.0_202]
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143) ~[na:1.8.0_202]
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812) ~[na:1.8.0_202]
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83) ~[nacos-client-1.3.2.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_202]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_202]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_202]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_202]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
+

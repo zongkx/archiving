@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.RoleMapper">
+	
+	
+	<resultMap id="roleMap" type="com.demo.entity.Role">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/> 
+		<result property="type" column="type"/> 
+	</resultMap>
+	
+	<select id="findUserRole" resultMap="roleMap">
+		select r.* from role r 
+  		left join user_role ur on(r.id = ur.role_id)
+		left join user u on(u.id = ur.user_id) 
+		where u.nickname = #{nickName}
+	
+	</select>
+</mapper>

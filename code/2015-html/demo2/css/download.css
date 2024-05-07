@@ -1,0 +1,157 @@
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+	    min-width: 980px;
+    	background: #fff;
+	}
+	#top{
+		border-bottom:2px solid lightgray;
+		border-top: #0000FF;
+		height: 63px;
+		
+	}
+	#a1{
+		padding-top: 8px;
+		padding-left:20px ;
+	}
+	.a2{
+		font-size: 12px;
+		text-decoration: none;
+		
+		
+		float:right;
+		padding-top: 45px;
+	}
+	.a2:hover{
+		text-decoration:underline;
+		color: cadetblue;
+	}
+	.s1{
+		float:right;
+		padding-top: 45px;
+	}
+	
+	#ul1{
+		width: 980px;
+		margin: 0 auto;
+		background-color:#fafafa;
+		
+	}
+	#ul1 li{
+		
+		float :left;
+		list-style: none outside none;
+	}
+	
+	#main{
+		height: 524px;
+		
+	}
+	.tab_container{
+		margin: 0 auto;
+		background:  url(../img/download/download_bg.png)  repeat;
+	}
+	
+	#tab1{
+		
+		background:  url(../img/download/window.jpg) 0 0 no-repeat ;
+		margin: 0 auto;
+		width: 960px;
+		height: 434px;
+		
+	}
+	#window {
+		position: relative;
+    	line-height: 23px;
+    	color: #fff;
+    	font-size: 12px;
+    	font-family: "microsoft yahei";
+    	top: 48%;
+    	left:600px;
+    	width: 390px;
+		
+	}
+	
+	
+	#tab2{
+		
+		background:  url(../img/download/android.jpg) 0 0 no-repeat ;
+		margin: 0 auto;
+		width: 960px;
+		height: 434px;
+		
+	}
+	#andriod {
+		position: relative;
+    	line-height: 23px;
+    	color: #fff;
+    	font-size: 12px;
+    	font-family: "microsoft yahei";
+    	top: 48%;
+    	left:600px;
+    	width: 390px;
+		
+	}
+	
+	
+	#more{
+		height:180px;
+		
+	}
+	#more1{
+		width: 960px;
+		margin: 0 auto;
+		height:180px;
+		
+	}
+	#detail{
+		float: left;
+		width: 450px;
+		position: relative;
+		top:40px;
+		left:90px;
+		
+	}
+	
+	#detail p{
+		font-size: 23px;
+		
+	}
+	#detail input{
+		height: 28px;
+    	width: 130px;    
+    	line-height: 28px;
+    	color: gray;
+	}
+	#detail_img{
+		position: relative;
+		top: 8px;	
+		left:10px;	
+	}
+	#detail2 {
+		float: left;
+		width:454px;
+		position: relative;
+		left:60px;
+		
+		
+	}
+	#detail2 p{
+		float: left;
+	}
+	#deatil2_img{
+		float: left;
+	}
+	
+	#boottom1{
+		padding-top:3% ;
+		margin: 0 auto;
+		width: 590px;
+	}
+	#boottom1 a{
+		font-size: 12px;
+		text-decoration:none;
+		color: #666;
+	}

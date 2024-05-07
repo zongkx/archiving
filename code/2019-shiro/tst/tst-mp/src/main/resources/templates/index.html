@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<!-- Bootstrap core CSS -->
+<link href="/s"
+	th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
+	rel="stylesheet">
+
+<script th:src="@{/webjars/jquery/3.3.1/jquery.min.js}"></script>
+
+<script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+<script th:src="@{js/index.js}"></script>
+</head>
+<body>
+	<span shiro:authenticated="true"> <span>欢迎您： <span
+			th:text="${user.nickname}"></span>
+	</span> <a href="/logout">logout</a>
+	</span>
+	<hr>
+	<span shiro:guest="true"> <a href="login">login</a>
+	</span>
+	<hr>
+	<a href="user/test">RequirePermsTest</a>
+	<hr>
+	<a href="user/test1">RequirePermsTest1</a>
+
+	<ul id="myTab" class="nav nav-tabs">
+		<li class="active"><a href="#home" data-toggle="tab"
+			onclick="UserManager();return false;" id="UserManager"> 用户管理 </a></li>
+		<li><a href="#ios" data-toggle="tab">角色管理</a></li>
+		<li class="dropdown"><a href="#" id="myTabDrop1"
+			class="dropdown-toggle" data-toggle="dropdown">权限管理 <b
+				class="caret"></b>
+		</a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+				<li><a href="#jmeter" tabindex="-1" data-toggle="tab">权限</a></li>
+				<li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+			</ul></li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+		<div class="tab-pane fade in active" id="home">
+			<p>1</p>
+		</div>
+		<div class="tab-pane fade" id="ios">
+			<p>2</p>
+		</div>
+		<div class="tab-pane fade" id="jmeter">
+			<p>3</p>
+		</div>
+		<div class="tab-pane fade" id="ejb">
+			<p>4</p>
+		</div>
+	</div>
+</body>
+</html>

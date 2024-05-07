@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function a(a){
+		 
+		alert(a);
+	};
+</script>
+</head>
+<body>
+	<a th:onclick="'javascript:a(\''+${msg}+'\')'">click</a>
+	<b th:text="${msg}">aaaa</b>
+	<p class="answer" th:text="${T(java.lang.Math).random()}">123456</p>
+	<input name="userName" th:value="${msg}" />
+	<p>Today is: <span th:text="${today}">13 february 2011</span>.</p>
+	Established locale country: <span th:text="${#locale.country}">US</span>.
+</body>
+</html>

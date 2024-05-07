@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background:red;
+            /*border:1px solid black;*/
+        }
+    </style>
+    <!--<script>js的开始-->
+    <script >
+        <!--让窗口把body里面的代码运行完-->
+        window.onload=function () {
+            //声明一个变量 找到div1赋值给变量  固定格式
+            var oDiv =document.getElementById('div1');
+            //变量的点击方法
+            //固定格式
+            oDiv.onclick=function () {
+                oDiv.style.width='400px';
+                oDiv.style.height='400px';
+
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!--css  样式表 -->
+    <!--容器类标签   块-->
+    <!--行间样式-->
+    <!--id 就相当于你的身份证,一个网页里只能存在一个-->
+    <div id="div1"  >
+        块
+    </div>
+    <!--<div id="div2" style="width: 200px;height:200px;background: blue;border :1px solid red" >-->
+        <!--块-->
+    <!--</div>-->
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.CommentMapper">
+
+	<insert id="addComment" parameterType="com.demo.entity.Comment" >
+	<!-- useGeneratedKeys="true" keyProperty="id" -->
+		 
+		 <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+		 	SELECT  last_insert_id() as id
+		 </selectKey>
+		 
+		 insert into comment(from_uid,to_uid,aid,time,content,type) 
+		 values(#{fromUid},#{toUid},#{aid},#{time},#{content},#{type})
+	</insert>
+	
+	<select id="getMostCommentsSoftwareId" resultType="java.util.Map">
+		 SELECT count(aid) c ,aid  FROM COMMENT  GROUP BY aid order by c DESC   limit 3 
+	</select>
+
+</mapper>

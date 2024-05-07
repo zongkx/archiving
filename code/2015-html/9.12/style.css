@@ -1,0 +1,81 @@
+    /*清0 没有空白的地方*/
+    *{
+        margin:0;
+        padding: 0;
+    }
+    body{
+        background-image: url(2.jpg);
+        background-repeat: no-repeat;
+        /*cover 覆盖全屏*/
+        background-size: cover;
+    }
+    /*头----------------------------------部*/
+    #header{
+        /*  rgba red green blue   alpha 透明度*/
+        background-color:rgba(0,0,0,0.1);
+        text-align: right;
+
+    }
+    /*头部的超链接*/
+    #header a{
+        color: white;
+        display: inline-block;
+        font-weight: 100;
+        margin: 5px;
+        height: 30px;
+        line-height: 30px;
+
+    }
+    /*头部的更多产品*/
+    #header .more-product,#content .search a{
+        background-color: rgb(71,131,255);
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+
+    }
+    /*内----------------------------------容*/
+    #content{
+        text-align: center;
+
+    }
+    #content .search{
+        width: 600px;
+        height: 35px;
+        margin: 10px auto;
+        /*background-color: red;*/
+
+    }
+    #content .search input{
+        width: 500px;
+        height: 35px;
+        padding-left: 10px;
+        /*盒子大小 处理文字的大小*/
+        box-sizing: border-box;
+        font-size: 20px;
+
+    }
+    #content .search a{
+        /*并列选择*/
+        height: 35px;
+        line-height: 35px;
+        /*浮动*/
+        float: right;
+        color: white;
+    }
+    #content .alert img{
+        width: 150px;
+        margin: 20px;
+
+    }
+    #content .alert img:hover{
+        /*透明度*/
+        opacity: 0.5;
+        cursor: pointer;
+        border: 3px yellow solid;
+    }
+    /*尾----------------------------------部*/
+    #footer {
+        text-align: center;
+        margin-bottom:5px ;
+    }

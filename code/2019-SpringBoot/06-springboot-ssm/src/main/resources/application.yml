@@ -1,0 +1,44 @@
+#\u7F16\u8F91JSP\u65F6\u81EA\u52A8\u66F4\u65B0
+#server.jsp-servlet.init-parameters.development=true
+
+mybatis:
+  mapper-locations:
+    classpath: com/demo/mapper/*.xml
+server:
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+      
+  #spring mvc
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  #redis
+  redis:
+    host: localhost
+    port: 6379
+    password:
+  #mysql
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/javaeebook?useUnicode=true&characterEncoding=utf-8&useSSL=false
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+customer:
+  from:
+    type: 002
+  industry:
+    type: 001
+  level:
+    type: 006
+     

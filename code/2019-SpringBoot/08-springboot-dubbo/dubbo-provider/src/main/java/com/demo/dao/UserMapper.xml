@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.demo.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.dubbo.model.User" >
+    <id column="u_id" property="uId" jdbcType="INTEGER" />
+    <result column="u_account" property="uAccount" jdbcType="VARCHAR" />
+    <result column="u_password" property="uPassword" jdbcType="VARCHAR" />
+    <result column="u_createtime" property="uCreatetime" jdbcType="DATE" />
+    <result column="u_state" property="uState" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    u_id, u_account, u_password, u_createtime, u_state
+  </sql>
+  
+  
+  
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where u_id = #{uId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByAccountAndPassword" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where u_account = #{uAccount} 
+    	and u_password = #{uPassword}
+  </select>
+  <select id="selectByAccount" parameterType="java.lang.String" resultType="java.lang.String">
+    select u_account from user
+    where u_account = #{uAccount}
+  </select>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from user
+    where u_id = #{uId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dubbo.model.User" >
+    insert into user (u_id, u_account, u_password, 
+      u_createtime, u_state)
+    values (#{uId,jdbcType=INTEGER}, #{uAccount,jdbcType=INTEGER}, #{uPassword,jdbcType=VARCHAR}, 
+      #{uCreatetime,jdbcType=DATE}, #{uState,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dubbo.model.User" >
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uId != null" >
+        u_id,
+      </if>
+      <if test="uAccount != null" >
+        u_account,
+      </if>
+      <if test="uPassword != null" >
+        u_password,
+      </if>
+      <if test="uCreatetime != null" >
+        u_createtime,
+      </if>
+      <if test="uState != null" >
+        u_state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uId != null" >
+        #{uId,jdbcType=INTEGER},
+      </if>
+      <if test="uAccount != null" >
+        #{uAccount,jdbcType=INTEGER},
+      </if>
+      <if test="uPassword != null" >
+        #{uPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="uCreatetime != null" >
+        #{uCreatetime,jdbcType=DATE},
+      </if>
+      <if test="uState != null" >
+        #{uState,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dubbo.model.User" >
+    update user
+    <set >
+      <if test="uAccount != null" >
+        u_account = #{uAccount,jdbcType=INTEGER},
+      </if>
+      <if test="uPassword != null" >
+        u_password = #{uPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="uCreatetime != null" >
+        u_createtime = #{uCreatetime,jdbcType=DATE},
+      </if>
+      <if test="uState != null" >
+        u_state = #{uState,jdbcType=INTEGER},
+      </if>
+    </set>
+    where u_id = #{uId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dubbo.model.User" >
+    update user
+    set u_account = #{uAccount,jdbcType=INTEGER},
+      u_password = #{uPassword,jdbcType=VARCHAR},
+      u_createtime = #{uCreatetime,jdbcType=DATE},
+      u_state = #{uState,jdbcType=INTEGER}
+    where u_id = #{uId,jdbcType=INTEGER}
+  </update>
+</mapper>

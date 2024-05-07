@@ -1,0 +1,18 @@
+
+boot:
+  age: 23
+  name: Raynor宗
+
+server:
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+      
+# spring mvc
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp

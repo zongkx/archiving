@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#top{
+	background-color: #106f8e;
+	height: 62px;
+	min-width: 1000px;
+}
+#top_bar{
+	
+	width: 98%;
+    height: 40px;
+   
+    min-width: 1000px;
+    font-size: 12px;
+    margin-left: -10px;
+    position: absolute;
+    left:15px;
+    top:10px;
+   	font-family: microsoft yahei,tahoma,arial;
+   
+}
+#top_bar_logo_a{
+	display:block;
+	height: 42px;;
+}
+.top_bar_a{
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	
+	
+}
+#top_bar dt,#top_bar dd {
+	float: left;
+}
+#top_bar_dt{
+	height: 32px;
+	margin: 4px 0;
+	width: 142px;
+	background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+    margin-left: 16px;
+ }
+ 
+#top_bar_dd1 span{
+	position: relative;
+	top:10px;
+	padding-left:60px;
+	
+	
+}
+
+
+#top_bar_dd1 a:hover{
+	color: lightgray;
+}
+#top_bar_dd1_more{
+	position: relative;
+	top:-10px;
+	left: 260px;
+}
+
+
+#find_list{
+	margin-left: -100px;
+	margin-top:20px;
+	box-shadow:0 0 1px #000 inset;
+	width: 640px;
+	background-color: white;
+	height: 200px;
+	border-radius: 4px;
+	
+}
+
+.find_list_a p{
+	position: relative;
+	left:80px;
+	top:-10px;
+	color: #336699;
+	
+}
+
+#top_bar_dd2{
+	width: 370px;
+	height: 30px;
+	margin:9px;
+	position: absolute;
+	right: 2px;
+
+}
+#top_bar_dd2 a{
+	float: right;
+	padding:6px;
+	text-decoration: none;
+	
+}
+#top_bar_dd2_a1{
+	background-color: yellow;
+	text-align: center;
+	width:60px;
+	border-radius: 10px;
+	
+}
+#top_bar_dd2_a2{
+	margin-right:9px ;
+}
+#top_bar_dd2_a3{
+	margin-top:-7px ;
+}
+
+
+#find_list2{
+	background-color: white;
+	width:240px;
+	height: 300px;
+	box-shadow:0 0 1px #000 inset;
+	border-radius: 4px;
+	position: relative;
+	right: 20px;
+	top:50px;
+}
+
+
+#find_list2_div1{
+	width: 240px;
+	height: 80px;
+	background-color: #438aee;
+}
+#find_list2_div1_a1{
+	margin-top: -30px;
+	margin-right:120px;
+}
+
+#main1{
+	height:70px;
+	border-bottom: solid 1px #DCDDDF;
+	background-color: #F1F1F2;
+}
+
+.main1_a{
+	margin-left:30px;
+	font-size: 13px;
+}
+.tabs{
+	padding-left: 40px;
+	padding-top: 30px;
+	
+}
+.tabs li{
+	list-style-type: none;
+	float: left;
+	padding-left: 40px;
+}
+.tabs li a{
+	text-decoration: none;
+	font-size: 13px;
+	color: #666666;
+}
+.tabs li a:hover{
+	background-color: #BBBBBB;
+	color: #000000;
+}
+
+#main2{
+	height:60px;
+	border-bottom: solid 1px #DCDDDF;
+}
+#main2 p{
+	float: left;
+	font-size: 13px;
+	margin-top: 20px;
+}
+#main2_p1{
+	padding-left: 60px;
+}
+#main2_p2{
+	padding-left: 770px;
+}
