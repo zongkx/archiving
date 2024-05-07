@@ -1,0 +1,30 @@
+# Spring
+spring:
+  application:
+    # 应用名称
+    name: provider
+  redis:
+    #redis数据库地址
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10001
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 127.0.0.1:8848
+  rabbitmq:
+    virtual-host: /
+    username: username
+    password: password
+    port: 5672
+    addresses: 39.97.243.43
+    publisher-returns: true
+    publisher-confirm-type: correlated  #确认消息发送到交换机选择确认类型为交互
+server:
+  port: 8081
